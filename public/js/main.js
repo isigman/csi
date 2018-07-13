@@ -1,15 +1,15 @@
-$( document ).ready(function( $ ) {
-	$('.fading-carousel').slick({
-	  dots: true,
-	  arrows: true,
-	  infinite: true,
-	  speed: 600,
-	  fade: true,
-	  cssEase: 'linear'
-	});
-	$('.fading-carousel').slick('slickPlay');
+$(document).ready(function ($) {
+    $('.fading-carousel').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 600,
+        fade: true,
+        cssEase: 'linear'
+    });
+    $('.fading-carousel').slick('slickPlay');
 
-	$('.scroll').slick({
+    $('.scroll').slick({
         speed: 10000,
         autoplay: true,
         autoplaySpeed: 0,
@@ -19,6 +19,12 @@ $( document ).ready(function( $ ) {
         variableWidth: true
     });
     $('.scroll').slick('slickPlay');
+
+    $('#criteria').hide();
+
+    $("#crit_btn").click(function () {
+        $("#criteria").slideToggle("slow");
+    });
 
 });
 

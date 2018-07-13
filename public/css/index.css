@@ -1,50 +1,55 @@
 @charset "UTF-8";
 /* index.css */
 #header-wrapper {
-  background-color: lightblue;
+    background-color: lightblue;
 }
 
 .center-img {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 #services-wrapper div {
-  display: inline-block;
+    display: inline-block;
 }
 
 #client_perspective p {
-  font-size: 13pt;
-  margin-bottom: 40px;
+    font-size: 13pt;
+    margin-bottom: 40px;
 }
 
 .left-text-align {
-  text-align: left;
+    text-align: left;
 }
+
 .right-text-align {
-  text-align: right;
+    text-align: right;
 }
+
 th, td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
 
-tr:hover {background-color: #f5f5f5;}
+tr:hover {
+    background-color: #f5f5f5;
+}
 
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 #carousel1 {
-   max-height: 300px;
-   max-width: 2000px;
-   overflow: hidden;
+    max-height: 300px;
+    max-width: 2000px;
+    overflow: hidden;
 }
 
 #carousel1 img {
-   max-height: 100%;
-   overflow: hidden;
+    max-height: 100%;
+    overflow: hidden;
 }
 
 .carousel-inner > .item > img {
@@ -52,37 +57,37 @@ body {
 }
 
 ul li {
-	display:inline-block;
+    display: inline-block;
 }
 
 ul li p {
-	color: black;
+    color: black;
 
-	margin-right: 55px;
-	font-size: 20px;
+    margin-right: 55px;
+    font-size: 20px;
 }
 
-ul li div p{
-	color: black;
-	
-	margin-right: 15px;
-	font-size: 20px;
+ul li div p {
+    color: black;
+
+    margin-right: 15px;
+    font-size: 20px;
 }
 
-ul li p{
-	color: black;
-	
-	margin-right: 45px;
-	font-size: 20px;
+ul li p {
+    color: black;
+
+    margin-right: 45px;
+    font-size: 20px;
 }
 
-a:link, a:visited { 
+a:link, a:visited {
     color: inherit;
     text-decoration: none;
     cursor: auto;
 }
 
-a:link:active, a:visited:active { 
+a:link:active, a:visited:active {
     color: inherit;
 }
 
@@ -105,7 +110,7 @@ a:link:active, a:visited:active {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -118,7 +123,9 @@ a:link:active, a:visited:active {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -128,90 +135,95 @@ a:link:active, a:visited:active {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #509099;
-    color:white;
+    color: white;
 }
+
 #carousel1 img {
-	max-width:100%;
-	max-height:100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #about_links ul {
-	text-decoration-style: none;
+    text-decoration-style: none;
 }
+
 #about_links ul li {
-	display: inline-block;
-	float: middle;
+    display: inline-block;
+    float: middle;
 }
-.center-div
-{
+
+.center-div {
     margin: auto;
     width: 60%;
     padding: 10px;
 }
 
 .slide {
-  position: relative;
+    position: relative;
 }
 
 .slide-caption {
-  text-align:center;
-  bottom: 0;
-  min-height: 120px;
-  position: absolute;
-  width: 100%;
-  z-index: 2;
+    text-align: center;
+    bottom: 0;
+    min-height: 120px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
 }
 
 #header-wrapper * {
     margin-top: 25px;
     font-size: 14pt;
 }
+
 #header-wrapper p {
     margin-top: 15px;
     font-size: 14pt;
 }
+
 #chat-button {
-  text-align: center;
-  margin-top: 20px;
-  margin-left: 30%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30%;
 }
 
-
 @media screen and (max-width: 1000px) {
-  #value-prop {
-    margin-top: 10px;
-    background-color: lightblue;
-    background-image: none;
-  }
-  #value-prop #prop {
-    text-align: center;
-    color: black;
-    padding: 0px;
-    float: none;
-  }
+    #value-prop {
+        margin-top: 10px;
+        background-color: lightblue;
+        background-image: none;
+    }
+
+    #value-prop #prop {
+        text-align: center;
+        color: black;
+        padding: 0px;
+        float: none;
+    }
 }
 
 .desc {
-  text-align: center;
-  font-size: 14pt;
+    text-align: center;
+    font-size: 14pt;
 }
 
 footer {
-  background-color: white;
+    background-color: white;
 }
 
 footer p {
-  font-size: 14pt;
+    font-size: 14pt;
 }
 
 .left-heading {
-  text-align: left;
-  font-size: 18pt;
-  text-decoration: underline;
+    text-align: left;
+    font-size: 18pt;
+    text-decoration: underline;
 }
+
 .about-text {
-  font-size: 14pt;
-  padding-left: 12px;
+    font-size: 14pt;
+    padding-left: 12px;
 }
 
 .headshot {
@@ -225,91 +237,98 @@ footer p {
 }
 
 #profiles h5 {
-  font-size: 16pt;
+    font-size: 16pt;
 }
+
 #profiles p {
-  font-size: 12pt;
+    font-size: 12pt;
 }
 
 #contact-header {
-  background-color: #509099;
-  margin-bottom: 25px;
-  color: white;
+    background-color: #509099;
+    margin-bottom: 25px;
+    color: white;
 }
+
 #event-header {
-  background-color: #509099;
-  margin-bottom: 25px;
-  color: white;
+    background-color: #509099;
+    margin-bottom: 25px;
+    color: white;
 }
 
 .state h4 {
-  font-size: 16pt;
+    font-size: 16pt;
 }
+
 .state p {
-  font-size: 12pt;
-  margin-left: 8px;
+    font-size: 12pt;
+    margin-left: 8px;
 }
+
 .state a {
-  color: darkblue;
+    color: darkblue;
 }
 
 #value-prop {
-  background-image: url('/img/building-ext-left.JPG');
-  background-size: cover;
-  min-height: 450px;
+    background-image: url('/img/building-ext-left.JPG');
+    background-size: cover;
+    min-height: 450px;
 }
 
 #value-prop #prop {
-  float: left;
-  max-width: 400px;
-  margin-left: 100px;
-  padding-top: 0px;
-  color: black;
+    float: left;
+    max-width: 400px;
+    margin-left: 100px;
+    padding-top: 0px;
+    color: black;
 }
+
 #value-prop #prop p {
-  font-size: 12pt;
+    font-size: 12pt;
 }
 
 #map-button {
-  text-align: center;
-  margin-left: 96px;
-  margin-bottom: 10px;
+    text-align: center;
+    margin-left: 96px;
+    margin-bottom: 10px;
 }
 
 #rc-header {
-  background-color: #509099;
-  margin-bottom: 25px;
-  color: white;
+    background-color: #509099;
+    margin-bottom: 25px;
+    color: white;
 }
 
 .blue-header {
-  background-color: #509099;
-  margin-bottom: 25px;
-  color: white;
+    background-color: #509099;
+    margin-bottom: 25px;
+    color: white;
 }
 
 #ca-header {
-  background-color: #509099;
-  margin-bottom: 25px;
-  color: white;
+    background-color: #509099;
+    margin-bottom: 25px;
+    color: white;
 }
 
 #founder-desc p {
-  font-size: 12pt;
+    font-size: 12pt;
 }
 
-  #services_dropdown{
+#services_dropdown {
     background-color: #3e8e41;
-      color:white;
-  }
-  #services_heading {
+    color: white;
+}
+
+#services_heading {
     background-image: url('/img/calc.jpeg');
     min-height: 300px;
-  }
-  #services_heading h2 {
-    color: white;
-  }
+}
 
-  .slide-caption {
+#services_heading h2 {
+    color: white;
+}
+
+.slide-caption {
     z-index: 1000;
-  }
+}

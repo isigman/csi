@@ -1,0 +1,74 @@
+<div class="col-md-12" style="display: inline-block">
+  <div class="col-md-10 col-md-offset-1" id="results">
+    <h3 style="text-align: center;">Search Results</h3>
+    <hr/>
+
+    <div class="search_results" style="text-align: center;">
+      <div class="col-md-12" style="font-size: 12px;">
+        <table>
+          <tr>
+            <th>
+              <div class="col-md-1" class="checkbox">
+                <p>Select</p>
+              </div>
+              <div class="col-md-1" class="state">
+                <p>State</p>
+              </div>
+              <div class="col-md-2">
+                <p>Jurisdiction</p>
+              </div>
+              <div class="col-md-2">
+                <p>Report Name</p>
+              </div>
+              <div class="col-md-2">
+                <p>Form Name</p>
+              </div>
+              <div class="col-md-1">
+                <p>Month</p>
+              </div>
+              <div class="col-md-1">
+                <p>Year</p>
+              </div>
+              <div class="col-md-1">
+                <p>Download</p>
+              </div>
+            </th>
+          </tr>
+          <!-- Iterate over results -->
+          <% @records.each do |record| %>
+            <tr>
+              <td>
+                <div class="col-md-1" class="checkbox">
+                  <input type="checkbox" name="select">
+                </div>
+                <div class="col-md-1" class="state">
+                  <p><%= record.state %></p>
+                </div>
+                <div class="col-md-2">
+                  <p><%= record.jurisdiction %></p>
+                </div>
+                <div class="col-md-2">
+                  <p><%= record.report_name %></p>
+                </div>
+                <div class="col-md-2">
+                  <p><%= record.form_name %></p>
+                </div>
+                <div class="col-md-1">
+                  <p><%= Date::ABBR_MONTHNAMES[record.billing_month] %></p>
+                </div>
+                <div class="col-md-1">
+                  <p><%= record.billing_year %></p>
+                </div>
+                <div class="col-md-1">
+                  <button type="button" class="btn btn-primary" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

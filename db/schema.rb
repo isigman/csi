@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171219214750) do
+ActiveRecord::Schema.define(version: 20180709000252) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,14 +42,13 @@ ActiveRecord::Schema.define(version: 20171219214750) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_admin_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "summary"
     t.string "link"
+    t.string "tag_list"
     t.integer "views"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -65,12 +64,33 @@ ActiveRecord::Schema.define(version: 20171219214750) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "tags", force: :cascade do |t|
-    t.string "name"
-    t.integer "count"
-    t.integer "article_id"
+  create_table "corps_users", id: false, force: :cascade do |t|
+    t.bigint "corp_id", null: false
+    t.bigint "user_id", null: false
+    t.index ["corp_id", "user_id"], name: "index_corps_users_on_corp_id_and_user_id"
+  end
+
+  create_table "queries", force: :cascade do |t|
+    t.decimal "user_id"
+    t.decimal "corp_id"
+    t.string "query_string"
+    t.decimal "results_count"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "records", force: :cascade do |t|
+    t.bigint "corp_id"
+    t.string "state"
+    t.string "jurisdiction"
+    t.string "report_name"
+    t.string "form_name"
+    t.integer "filing_format"
+    t.integer "billing_month"
+    t.integer "billing_year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["corp_id"], name: "index_records_on_corp_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -82,13 +102,13 @@ ActiveRecord::Schema.define(version: 20171219214750) do
     t.integer "sign_in_count", default: 0, null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.inet "current_sign_in_ip"
-    t.inet "last_sign_in_ip"
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "corp"
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.string "role"
+    t.integer "client_id"
   end
 
   create_table "wikis", force: :cascade do |t|

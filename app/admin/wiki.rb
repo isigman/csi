@@ -14,10 +14,10 @@ ActiveAdmin.register Wiki do
   form do |f|
     f.inputs do
       f.input :title
-	  f.file_field :wiki
+      f.file_field :wiki
       f.input :resources
-      f.input :author, :input_html => { :value => current_user }
-      f.input :views, :input_html => { :value => 0 }
+      f.input :author, :input_html => {:value => current_user}
+      f.input :views, :input_html => {:value => 0}
     end
     f.actions
   end

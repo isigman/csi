@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Compliance Solutions, Inc.</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>Compliance Solutions, Inc.</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-        <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/slick.css" rel="stylesheet">
-    <link href="/css/slick-theme.css" rel="stylesheet">
-    <link href="/css/animate.min.css" rel="stylesheet">
-    <!--Custom-->
-    <link href="/css/index.css" rel="stylesheet" type="text/css">
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/slick.css" rel="stylesheet">
+  <link href="/css/slick-theme.css" rel="stylesheet">
+  <link href="/css/animate.min.css" rel="stylesheet">
+  <!--Custom-->
+  <link href="/css/index.css" rel="stylesheet" type="text/css">
 
-  </head>
-  <body>
-  <div style="min-width:1080px;display: inline-block;">
+</head>
+<body>
 
-  <%= render 'partials/header' %>
-  <%= yield %>
-  <%= render 'partials/footer' %>
-  
-  </div>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="/js/jquery-1.11.3.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="/js/bootstrap.js"></script>
-  <script src="/js/slick.js"></script>
-        
-  <!--Custom JS-->
-  <script src="/js/main.js"></script>
+<%= render 'partials/header' %>
+<%= yield %>
+<%= render 'partials/footer' %>
 
-      </body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/js/jquery-1.11.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/js/bootstrap.js"></script>
+<script src="/js/slick.js"></script>
+
+<!--Custom JS-->
+<script src="/js/main.js"></script>
+
+</body>
 </html>

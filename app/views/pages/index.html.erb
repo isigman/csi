@@ -1,232 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Compliance Solutions, Inc.</title>
-    <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/slick.css" rel="stylesheet">
-    <link href="css/slick-theme.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <!--Custom-->
-    <link href="css/index.css" rel="stylesheet" type="text/css">
- 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compliance Solutions, Inc.</title>
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/slick.css" rel="stylesheet">
+  <link href="css/slick-theme.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <!--Custom-->
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 
-<%= render 'partials/header' %> 
+<%= render 'partials/header' %>
 
 <!--Top Image Carousel-->
 <div id="carousel1" class="fading-carousel" style="max-height: 400px;">
-      <div class="item">
+  <div class="item">
 
-        <% if Date.today().wday.even? %>
-          <img src="img/top_carousel/meeting.jpeg" alt="First slide image">
-          <div class="slide-caption">
-            <h4 style="font-size:16pt;">CSI the only full service tax and FCC compliance firm <br/> that performs our own Tax Research in 30,000+ jurisdictions.</h4>
-          </div>
-
-        <% else %>
-          <img src="img/top_carousel/four_people_meeting.jpeg" alt="First slide image">
-            <div class="slide-caption">
-            <h4 style="font-size:16pt;color:gold;">Compliance Solutions provides organization and structure in a chaotic telecom industry full <br/> of bureaucratic red tape which includes 30,000 different tax jurisdictions.</h4>
-            </div>
-        <% end %>
-
-
-      </div>
-      <div class="item">
-
-        <% if Date.today().wday.even? %>
-          <img src="img/top_carousel/calc.jpeg" alt="Second slide image">
-          <div class="slide-caption">
-            <h4 style="font-size:16pt;">We represent you on a daily basis with local, state and federal taxing agencies. <br/>By providing multiple services to our clients, CSI can bundle and deliver more cost effective solutions<br/> to reduce your operating costs.</h4>
-          </div>
-
-        <% else %>
-          <img src="img/top_carousel/desk.jpeg" alt="Second slide image" style="z-index:1;">
-          <div class="slide-caption">
-            <h4 style="font-size:16pt;color:black;">Audits - We have an experienced team of CPAs and Tax experts which<br/> are dedicated to handle the defense of your Local, State, FCC and Regulatory Audits.</h4>
-          </div>
-        <% end %>
-
+    <% if Date.today().wday.even? %>
+      <img src="img/top_carousel/meeting.jpeg" alt="First slide image">
+      <div class="slide-caption">
+        <h4 style="font-size:16pt;">CSI the only full service tax and FCC compliance firm that performs our own Tax
+          Research in 30,000+ jurisdictions, Tax Code Mapping, Tax Rating/Calculations to support your billing,
+          Transaction Tax Reporting, FCC Registrations/Reporting, Secretary of State Registrations/Reporting, Tax
+          Exemption Services to Suppliers and Carrier Customers, Treasury/Disbursement Management, Audit Defense,
+          Corporate Income Tax, Property Tax Returns and Remittances. We provide our clients with a 24/7/365 library of
+          filed returns. Our Treasury/Disbursement services provide turnkey solutions and we provide a client specific
+          third party bank statement. There are NO commingling of funds at Compliance Solutions. We also provide our
+          clients with a 24/7/365 tax rate/FCC rate lookup tool.</h4>
       </div>
 
-      <div class="item">
+    <% else %>
+      <img src="img/top_carousel/four_people_meeting.jpeg" alt="First slide image">
+      <div class="slide-caption">
+        <h4 style="font-size:16pt;color:gold;">Compliance Solutions provides organization and structure in a chaotic
+          telecom industry full <br/> of bureaucratic red tape which includes 30,000 different tax jurisdictions.</h4>
+      </div>
+    <% end %>
 
-        <% if Date.today().wday.even? %>
-          <img src="img/top_carousel/group-inside.jpg" alt="Fourth slide image">
-          <div class="slide-caption">
-            <h3 style="font-size:16pt;color:white;">Compliance Solutions, Inc. - Our founder Mark Lammert CPA and the CSI Team<br/> of 40+ full time tax professionals & FCC/regulatory professionals have a <br/>combined 300+ years of tax and telecom experience.</h3>
-          </div>
 
-        <% else %>
-          <img src="img/top_carousel/group-outside.jpg" alt="Fourth slide image">
-            <div class="slide-caption">
-              <h3 style="font-size:16pt;color:gold;">Our mission at CSI is to be your single vendor/end-to-end partner <br/>for all of your compliance and tax needs so you can focus on what's <br/>important which is growing your business.</h3>
-            </div>        
-        <% end %>
+  </div>
+  <div class="item">
+
+    <% if Date.today().wday.even? %>
+      <img src="img/top_carousel/calc.jpeg" alt="Second slide image">
+      <div class="slide-caption">
+        <h4 style="font-size:16pt;">We represent you on a daily basis with local, state and federal taxing agencies.
+          <br/>By providing multiple services to our clients, CSI can bundle and deliver more cost effective
+          solutions<br/> to reduce your operating costs.</h4>
       </div>
 
-
-      <div class="item">
-        <img src="img/top_carousel/binders.jpeg" alt="Fifth slide image">
-        <div class="slide-caption">
-          <h3 style="color:white;font-size:14pt;">We offer flat monthly pricing for our portfolio of services. There are many <br/> solutions available. Unlike our competitors, we do NOT charge you for conference calls or consultative <br/>calls with our CPA's to discuss tax issues.</h3>
-        </div>
+    <% else %>
+      <img src="img/top_carousel/desk.jpeg" alt="Second slide image" style="z-index:1;">
+      <div class="slide-caption">
+        <h4 style="font-size:16pt;color:black;">Audits - We have an experienced team of CPAs and Tax experts which<br/>
+          are dedicated to handle the defense of your Local, State, FCC and Regulatory Audits.</h4>
       </div>
+    <% end %>
+
+  </div>
+
+  <div class="item">
+
+    <% if Date.today().wday.even? %>
+      <img src="img/top_carousel/group-inside.jpg" alt="Fourth slide image">
+      <div class="slide-caption">
+        <h3 style="font-size:16pt;color:white;">Compliance Solutions, Inc. - Our founder Mark Lammert CPA and the CSI
+          Team<br/> of 40+ full time tax professionals & FCC/regulatory professionals have a <br/>combined 300+ years of
+          tax and telecom experience.</h3>
+      </div>
+
+    <% else %>
+      <img src="img/top_carousel/group-outside.jpg" alt="Fourth slide image">
+      <div class="slide-caption">
+        <h3 style="font-size:16pt;color:gold;">Our mission at CSI is to be your single vendor/end-to-end partner <br/>for
+          all of your compliance and tax needs so you can focus on what's <br/>important which is growing your business.
+        </h3>
+      </div>
+    <% end %>
+  </div>
+
+
+  <div class="item">
+    <img src="img/top_carousel/binders.jpeg" alt="Fifth slide image">
+    <div class="slide-caption">
+      <h3 style="color:white;font-size:14pt;">We offer flat monthly pricing for our portfolio of services. There are
+        many <br/> solutions available. Unlike our competitors, we do NOT charge you for conference calls or
+        consultative <br/>calls with our CPA's to discuss tax issues.</h3>
+    </div>
+  </div>
 </div>
 
 <!--News-->
 <div>
   <h3 style="text-align:center;">Top News</h3>
 </div>
-<<<<<<< HEAD
 <div style="max-height:250px;>
-  <div id="news-carousel" class="carousel scroll">
-    <% @articles.each do |article| %>
-      <div style="width:300px;">
-        <img src= <%= article.img %> height="150px" class="img-rounded center-img" />
-        <h4 class="text-center"><%= article.title %></h4>
-        <p class="text-center"><%= article.summary %></p>
-      </div>
-    <% end %>
+    <div id=" news-carousel
+" class="carousel scroll">
+<% @articles.each do |article| %>
+  <div style="width:300px;">
+    <img src=<%= article.img %> height="150px" class="img-rounded center-img"/>
+    <h4 class="text-center"><%= article.title %></h4>
+    <p class="text-center"><%= article.summary %></p>
   </div>
+<% end %>
+</div>
 </div>
 
 <div id="value-prop">
-    <div id="prop">
-      <h3 class="text-center" style="padding-top:20px;">Why CSI?</h3>
-      <p class="text-center">Compliance Solutions provides organization and structure in a chaotic telecom industry full of bureaucratic red tape which includes 30,000 different tax jurisdictions.  We handle the complexities for you and keep you beyond compliance and into an audit defensible position.  Outsource your work to CSI's 40+ full time professionals as our mission at CSI is to be your single vendor/end-to-end partner for all of your compliance and tax needs so you can focus on what's important which is growing your business.</p>
-    </div>
+  <div id="prop">
+    <h3 class="text-center" style="padding-top:20px;">Why CSI?</h3>
+    <p class="text-center">Compliance Solutions provides organization and structure in a chaotic telecom industry full
+      of bureaucratic red tape which includes 30,000 different tax jurisdictions. We handle the complexities for you and
+      keep you beyond compliance and into an audit defensible position. Outsource your work to CSI's 40+ full time
+      professionals as our mission at CSI is to be your single vendor/end-to-end partner for all of your compliance and
+      tax needs so you can focus on what's important which is growing your business.</p>
+  </div>
 </div>
-=======
 
-<hr />
->>>>>>> master
+<hr/>
 
 <!--Services-->
+<div>
+  <h3 class="text-center">Our Services</h3></div>
+<div>
+  <div id="services-wrapper" class="row align-items-center">
+
+    <div class="col-md-2">
+      <a href="/services#state_registration_reporting">
+        <img src="img/services/usa.png" alt="" width="80px" class="center-img img-rounded"/>
+        <h5 class="text-center">State Registration/Reporting</h5>
+      </a>
+    </div>
+
+    <div class="col-md-2">
+      <a href="/services#fcc_reporting">
+        <img src="img/services/fcc.png" alt="" width="80px" class="center-img img-rounded"/>
+        <h5 class="text-center">FCC Registration/Reporting</h5>
+      </a>
+    </div>
+
+    <div class="col-md-2">
+      <a href="/services#tax_exemption">
+        <img src="img/services/exempt.png" alt="" width="80px" class="center-img img-rounded"/>
+        <h5 class="text-center">Tax Exemption</h5>
+      </a>
+    </div>
+
+    <div class="col-md-2">
+      <a href="/tax_rating_billing_solutions#tax_mapping">
+        <img src="img/services/clipboard.png" alt="" width="80px" class="center-img img-rounded"/>
+        <h5 class="text-center">Tax Mapping</h5>
+      </a>
+    </div>
+
+    <div class="col-md-2">
+      <a href="/tax_rating_billing_solutions#tax_rating">
+        <img src="img/services/calc.png" alt="" width="80px" class="center-img img-rounded"/>
+        <h5 class="text-center">Tax Rating</h5>
+      </a>
+    </div>
+
+    <div class="col-md-2">
+      <a href="/services#tax_filing">
+        <img src="img/services/laptop.png" alt="" width="80px" class="center-img img-rounded"/>
+        <h5 class="text-center">Transactional Tax Reporting</h5>
+      </a>
+    </div>
+
+    <div class="col-md-2 col-md-offset-2">
+      <a href="/services#treasury">
+        <img src="img/services/cash.png" alt="" width="80px" class="center-img img-rounded"/>
+        <h5 class="text-center">Treasury Management</h5>
+      </a>
+    </div>
+
+    <div class="col-md-2">
+      <a href="/services#audit_defense">
+        <img src="img/services/audit.png" alt="" width="80px" class="center-img img-rounded"/>
+        <h5 class="text-center">Audit Defense</h5>
+      </a>
+    </div>
+
+    <div class="col-md-2">
+      <a href="/services#corporate_tax">
+        <img src="img/services/briefcase.png" alt="" width="80px" class="center-img img-rounded"/>
+        <h5 class="text-center">Corporate Tax</h5>
+      </a>
+    </div>
+
+    <div class="col-md-2">
+      <a href="/services#property_">
+        <img src="img/services/blue-tower.png" alt="" width="80px" class="center-img img-rounded"/>
+        <h5 class="text-center">Property Tax</h5>
+      </a>
+    </div>
+
+  </div>
   <div>
-    <h3 class="text-center">Our Services</h3></div>
-  <div>
-<div id="services-wrapper" class="row align-items-center">
-
-  <div class="col-md-2">
-    <a href="/services#state_registration_reporting">
-      <img src="img/services/usa.png" alt="" width="80px" class="center-img img-rounded"/>
-      <h5 class="text-center">State Registration/Reporting</h5>
+    <a href="/services">
+      <button type="button" class="btn btn-primary center-img" style="margin:auto;">See all Services</button>
     </a>
-  </div>
-
-  <div class="col-md-2">
-    <a href="/services#fcc_reporting">
-      <img src="img/services/fcc.png" alt="" width="80px" class="center-img img-rounded"/>
-      <h5 class="text-center">FCC Registration/Reporting</h5>
-    </a>
-  </div>
-
-  <div class="col-md-2">
-    <a href="/services#tax_exemption">
-      <img src="img/services/exempt.png" alt="" width="80px" class="center-img img-rounded"/>
-      <h5 class="text-center">Tax Exemption</h5>
-    </a>
-  </div>
-
-  <div class="col-md-2">
-    <a href="/tax_rating_billing_solutions#tax_mapping">
-      <img src="img/services/clipboard.png" alt="" width="80px" class="center-img img-rounded"/>
-      <h5 class="text-center">Tax Mapping</h5>
-    </a>
-  </div>
-
-  <div class="col-md-2">
-    <a href="/tax_rating_billing_solutions#tax_rating">
-      <img src="img/services/calc.png" alt="" width="80px" class="center-img img-rounded"/>
-      <h5 class="text-center">Tax Rating</h5>
-    </a>
-  </div>
-
-  <div class="col-md-2">
-    <a href="/services#tax_filing">
-      <img src="img/services/laptop.png" alt="" width="80px" class="center-img img-rounded"/>
-      <h5 class="text-center">Transactional Tax Reporting</h5>
-    </a>
-  </div>
-
-  <div class="col-md-2 col-md-offset-2">
-    <a href="/services#treasury">
-      <img src="img/services/cash.png" alt="" width="80px" class="center-img img-rounded"/>
-      <h5 class="text-center">Treasury Management</h5>
-    </a>
-  </div>
-
-  <div class="col-md-2">
-    <a href="/services#audit_defense">
-      <img src="img/services/audit.png" alt="" width="80px" class="center-img img-rounded"/>
-      <h5 class="text-center">Audit Defense</h5>
-    </a>
-  </div>
-
-  <div class="col-md-2">
-    <a href="/services#corporate_tax">
-      <img src="img/services/briefcase.png" alt="" width="80px" class="center-img img-rounded"/>
-      <h5 class="text-center">Corporate Tax</h5>
-    </a>
-  </div>
-
-  <div class="col-md-2">
-    <a href="/services#property_">
-      <img src="img/services/blue-tower.png" alt="" width="80px" class="center-img img-rounded"/>
-      <h5 class="text-center">Property Tax</h5>
-    </a>
-  </div>
-
-  </div>
-  <div>
-    <a href="/services"><button type="button" class="btn btn-primary center-img" style="margin:auto;">See all Services</button></a>
   </div>
 </div>
 
 <!--Lifecycle Flowchart-->
 
-  
-  <!--Testemonials-->
-  <div class="panel panel-default" style="margin-top:10px;">
 
-    <div class="panel-header" ><h3 class="text-center">Client Perspective</h3></div>
-      <div class="panel-body">
-        <div id="testemonials">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-            <div class="col-md-8">
-              <p class="left-text-align"><em>Their ability to offer a single vendor end-to-end solution allows my company to focus on our customers and maximize growth. Mark Lammert and his team go above and beyond to make the hectic world of taxation a smooth and effortless process. -Telecom Provider in Central Texas</em></p>
-            </div>
-            <div class="col-md-8 col-lg-offset-4">
-              <p class="right-text-align"><em>CSI’s professional and highly experienced staff makes taxation stress free. They are quick to respond and always make me feel comfortable. -Telecom Provider in North Florida</em></p>
-            </div>
-            <div class="col-md-8">
-              <p class="left-text-align"><em>When choosing a tax partner I was looking for three characteristics, Integrity, Accuracy, and Reliability. Compliance Solutions has all of these qualities plus more! -Telecom Provider in Southern California </em></p>
-            </div>
-            <div class="col-md-8 col-lg-offset-4">
-              <p class="right-text-align"><em>We've been partnered with Compliance Solutions for nearly a decade and in doing so it has removed the burden of compliance and allowed us to focus on growth within the industry. -Telecom Provider in Southern Ohio</em></p>
-            </div>
+<!--Testemonials-->
+<div class="panel panel-default" style="margin-top:10px;">
+
+  <div class="panel-header"><h3 class="text-center">Client Perspective</h3></div>
+  <div class="panel-body">
+    <div id="testemonials">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="col-md-8">
+            <p class="left-text-align">
+              <em>Their ability to offer a single vendor end-to-end solution allows my company to focus on our customers
+                and maximize growth. Mark Lammert and his team go above and beyond to make the hectic world of taxation
+                a smooth and effortless process. -Telecom Provider in Central Texas</em></p>
           </div>
+          <div class="col-md-8 col-lg-offset-4">
+            <p class="right-text-align">
+              <em>CSI’s professional and highly experienced staff makes taxation stress free. They are quick to respond
+                and always make me feel comfortable. -Telecom Provider in North Florida</em></p>
+          </div>
+          <div class="col-md-8">
+            <p class="left-text-align">
+              <em>When choosing a tax partner I was looking for three characteristics, Integrity, Accuracy, and
+                Reliability. Compliance Solutions has all of these qualities plus more! -Telecom Provider in Southern
+                California </em></p>
+          </div>
+          <div class="col-md-8 col-lg-offset-4">
+            <p class="right-text-align">
+              <em>We've been partnered with Compliance Solutions for nearly a decade and in doing so it has removed the
+                burden of compliance and allowed us to focus on growth within the industry. -Telecom Provider in
+                Southern Ohio</em></p>
           </div>
         </div>
       </div>
     </div>
-  
-  <%=render 'partials/footer'%>
+  </div>
+</div>
 
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/slick.js"></script>
-        
-  <!--Custom JS-->
-  <script src="/js/main.js"></script>
+<%= render 'partials/footer' %>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/slick.js"></script>
+
+<!--Custom JS-->
+<script src="/js/main.js"></script>
 
 
 </body>

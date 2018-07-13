@@ -1,0 +1,75 @@
+<div class="col-md-12" id="dashbody" style="padding-bottom:200px; margin-top: 25px;min-height:1000px;">
+  <div class="col-md-4 col-md-offset-4" id="display">
+    <h2 text-decoration="underline">Search</h2>
+    <div>
+      <%= form_tag('/dashboard/search', method: "post", class: 'form-group') do %>
+
+        <!-- Record Type  -->
+        <%= label_tag(:record_type, "Record Type:") %>
+        <%= select_tag(:record_type, options_for_select([
+                                                            ['Completed Tax Returns', 5],
+                                                            ['this is also an option', 2]
+                                                        ]), class: 'form-control') %>
+
+        <h3 id="crit_btn">Add Criteria <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></h3>
+
+
+        <!-- Search Criteria  -->
+
+        <!-- State -->
+        <div id="criteria">
+          <%= label_tag(:state, "State:") %>
+          <%= select_tag :state, options_for_select(@states), class:'form-control' %>
+
+          <!-- Jurisdiction -->
+          <%= label_tag(:jurisdiction_string, "Jurisdiction:") %>
+          <%= select_tag(:jurisdiction_string_options, options_for_select([
+                                                                              [],
+                                                                              ['begins with', 1],
+                                                                              ['is equal to', 2],
+                                                                              ['contains', 3],
+                                                                              ['ends with', 4]
+                                                                          ]), class: 'form-control form_item') %>
+          <%= text_field_tag (:jurisdiction_string),  "", class: 'form-control form_item jurisdiction_input' %>
+          <div></div>
+
+          <!-- Filing Format -->
+          <%= label_tag(:filing_format, "Filing Format:", style: "padding-top:10px;") %>
+          <%= select_tag(:filing_format, options_for_select([
+                                                        [],
+                                                        ['Paper', 1],
+                                                        ['Electronic', 2],
+                                                        ['Telefile', 3],
+                                                        ['Electronic Upload', 4],
+                                                    ]), class: 'form-control form_item') %>
+
+          <!--Billing Month -->
+          <%= label_tag(:month, "Billing Month:") %>
+          <%= select_tag(:month, options_for_select([
+                                                        [],
+                                                        ['January', 1],
+                                                        ['February', 2],
+                                                        ['March', 3],
+                                                        ['April', 4],
+                                                        ['May', 5],
+                                                        ['June', 6],
+                                                        ['July', 7],
+                                                        ['August', 8],
+                                                        ['September', 9],
+                                                        ['October', 10],
+                                                        ['November', 11],
+                                                        ['December', 12]
+                                                    ]), class: 'form-control form_item') %>
+
+          <!-- Billing Year -->
+          <%= label_tag(:year, "Billing Year:") %>
+          <%= select_tag(:year, options_for_select(@years), class: 'form-control form_item') %>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Search</button>
+
+
+      <% end %>
+    </div>
+  </div>
+</div>
