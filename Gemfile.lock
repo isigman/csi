@@ -106,6 +106,9 @@ GEM
     formtastic_i18n (0.6.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    haml (5.0.4)
+      temple (>= 0.8.0)
+      tilt
     has_scope (0.7.2)
       actionpack (>= 4.1)
       activesupport (>= 4.1)
@@ -247,6 +250,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    temple (0.8.0)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
     therubyracer (0.12.3)
@@ -292,6 +296,7 @@ DEPENDENCIES
   devise
   faker!
   formtastic
+  haml
   jbuilder (~> 2.5)
   jquery-rails
   jquery-ui-rails

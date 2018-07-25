@@ -34,7 +34,33 @@
   </div>
 </div>
 
+<!--Group Pictures-->
+<div class="col-md-10 col-md-offset-1">
+  <div id="group-pictures-carousel" class="fading-carousel" style="max-height: 500px;overflow: hidden;">
+    <% @images.each do |image| %>
+      <div class="item" style="align:center;">
+        <div style="max-width:100%;max-height:100%;">
+        <%= image_tag "group-pictures/#{image.split('/').last}" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="col-md-10 col-md-offset-1" style="height:10px;background-color: #509099;margin-bottom: 8px;"></div>
 
+<div class="col-md-6 col-md-offset-3">
+  <a class="twitter-timeline"
+     data-height="600"
+     href="https://twitter.com/CSI_Longwood">
+  </a>
+  <a class="twitter-follow-button"
+     href="https://twitter.com/CSI_Longwood">
+    Follow @CSI_Longwood</a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+
+<div class="col-md-10 col-md-offset-1" style="height:10px;background-color: #509099;margin-bottom: 8px;"></div>
 <!--History-->
 <div id="history" class="row">
   <div class="col-md-8 col-md-offset-2">
@@ -52,7 +78,6 @@
       providing the quality solutions to deliver your business with more effective and efficient tax and compliance
       solutions.</p>
   </div>
-  <<<<<<< HEAD
   <div class="col-md-10 col-md-offset-1" style="height:10px;background-color: #509099;margin-top:8px;margin-bottom: 8px;"></div>
 </div>
 
@@ -80,10 +105,6 @@
       </p></div>
   </div>
   <div class="col-md-10 col-md-offset-1" style="height:10px;background-color: #509099;margin-top:8px;margin-bottom: 8px;"></div>
-  =======
-  <div class="col-md-10 col-md-offset-1" style="height:10px;background-color: #509099;margin-top:8px;margin-bottom: 8px;">
-  </div>
-  >>>>>>> master
 </div>
 
 
@@ -91,11 +112,7 @@
 <!--Leadership-->
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-    <<<<<<< HEAD
     <h4 class="left-heading">Some Members of the CSI Team</h4>
-    =======
-    <h4 class="left-heading" id="leadership">Leadership</h4>
-    >>>>>>> master
   </div>
   <div class="col-md-10 col-md-offset-1" id="profiles">
     <div class="col-md-4">
@@ -301,17 +318,8 @@
         <p class="text-center"></p>
       </div>
     <% end %>
-    <!--How many are left? 21-->
-
-
   </div>
-  <<<<<<< HEAD
-
-
-  =======
-  <div class="col-md-10 col-md-offset-1" style="height:10px;background-color: #509099;margin-top:8px;margin-bottom: 8px;">
-  </div>
-  >>>>>>> master
+  <div class="col-md-10 col-md-offset-1" style="height:10px;background-color: #509099;margin-top:8px;margin-bottom: 8px;"></div>
 </div>
 
 
@@ -320,14 +328,8 @@
   <div class="col-md-10 col-md-offset-1">
     <img src="img/group-outside.jpg" alt="" class="center-img" width="100%"/>
   </div>
-  <div class="col-md-10 col-md-offset-1"
-  <<<<<<< HEAD
-  style="height:10px;background-color: #509099;margin-top:8px;margin-bottom: 8px;">
-</div>
-=======
-style="height:10px;background-color: #509099;margin-top:8px;margin-bottom: 8px;"></div>
-</div>
->>>>>>> master
+  <div class="col-md-10 col-md-offset-1" style="height:10px;background-color: #509099;margin-top:8px;margin-bottom: 8px;"></div>
+  </div>
 </div>
 
 

@@ -1,0 +1,49 @@
+#dashboard_header {
+  width: 100%;
+  background-color: #FFFFFF;
+  min-height: 125px;
+  text-align: center;
+  display: inline-block;
+  border-bottom-style: solid;
+  border-bottom-color: #174699;
+}
+
+.header_padding {
+  padding-top: 40px;
+}
+
+.nav-panel {
+  background-color: white;
+  height: 100%;
+}
+
+.nav-panel * {
+  color: #174699;
+  text-align: center;
+}
+
+.nav-panel .dashboard_menu_item {
+  border-bottom: solid;
+  border-color: #174699;
+}
+
+#body {
+  margin: 0;
+  padding: 0;
+}
+
+#display {
+  display: block;
+  color: white;
+  margin-top: 0px;
+  background-color: #509099;
+  border-radius: 5px;
+}
+
+#display .form_item {
+  margin-bottom: 10px;
+}
+
+.jurisdiction_input {
+  color: black;
+}

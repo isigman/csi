@@ -17,6 +17,9 @@ class PagesController < ApplicationController
   end
 
   def about
+    puts "here"
+    @images = Dir.glob('app/assets/images/group-pictures/*.jpg')
+    puts @images
     render 'pages/about', layout: 'application.html.erb'
   end
 

@@ -5,7 +5,8 @@ $(document).ready(function ($) {
         infinite: true,
         speed: 600,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        centerMode: true,
     });
     $('.fading-carousel').slick('slickPlay');
 
@@ -16,7 +17,8 @@ $(document).ready(function ($) {
         cssEase: 'linear',
         slidesToShow: 1,
         slidesToScroll: 1,
-        variableWidth: true
+        variableWidth: true,
+
     });
     $('.scroll').slick('slickPlay');
 
